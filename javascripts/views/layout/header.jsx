@@ -10,7 +10,7 @@ export default class Header extends Component {
       <Navbar inverse fixedTop fluid>
         <Navbar.Header>
           <Navbar.Brand>
-            <a href="#">InkSkill</a>
+            <a href="#">Pomodoro</a>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>        
