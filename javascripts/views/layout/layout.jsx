@@ -8,7 +8,6 @@ export default class Layout extends Component {
   render() {
     return (
       <Grid fluid>
-      	<Header />
         { this.props.children }
       </Grid>
     );
