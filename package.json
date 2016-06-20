@@ -1,5 +1,5 @@
 {
-  "name": "react-webpack-bootstrap-boilerplate",
+  "name": "react-pomodoro",
   "version": "0.0.1",
   "scripts": {
     "start": "rm -f dist/css/bundle* && node server.js",
