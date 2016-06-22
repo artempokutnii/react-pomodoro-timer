@@ -25,6 +25,30 @@ export default class Timer extends Component {
     });
   }
 
+  setCodeTime = () => {
+    let defaultTime = 1500;
+
+    this.setState({
+      time: defaultTime
+    })
+  };
+
+  setShortTime = () => {
+    let defaultTime = 300;
+
+    this.setState({
+      time: defaultTime
+    })
+  };
+
+  setLongTime = () => {
+    let defaultTime = 900;
+
+    this.setState({
+      time: defaultTime
+    })
+  };
+
   format(seconds) {
     let m = Math.floor(seconds % 3600 / 60);
     let s = Math.floor(seconds % 3600 % 60);
@@ -42,9 +66,9 @@ export default class Timer extends Component {
         </div>
 
         <div className="setup-time">
-          <Button className="btn">Code</Button>
-          <Button className="btn">Short break</Button>
-          <Button className="btn">Long break</Button>
+          <Button className="btn" onClick={ this.setCodeTime }>Code</Button>
+          <Button className="btn" onClick={ this.setShortTime }>Short break</Button>
+          <Button className="btn" onClick={ this.setLongTime }>Long break</Button>
         </div>
 
       </div>
