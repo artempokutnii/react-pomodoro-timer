@@ -3,6 +3,7 @@
 import React, { Component } from 'react';
 import { Row, Col, Button } from 'react-bootstrap';
 
+import GithubCorner from 'react-github-corner';
 
 export default class Timer extends Component {
 
@@ -58,17 +59,25 @@ export default class Timer extends Component {
 
   render() {
     return (
+      <div className="pomodoro-timer">
+        <GithubCorner
+          href="https://github.com/artempokutnii/react-pomodoro-timer"
+          bannerColor="#fff"
+          octoColor="#45668e"
+          />
 
-      <div className="main">
+        <div className="main">
 
-        <div>
-          <span className="time">{ this.format(this.state.time) }</span>
-        </div>
+          <div>
+            <span className="time">{ this.format(this.state.time) }</span>
+          </div>
 
-        <div className="setup-time">
-          <Button className="btn" onClick={ this.setCodeTime }>Code</Button>
-          <Button className="btn" onClick={ this.setShortTime }>Short break</Button>
-          <Button className="btn" onClick={ this.setLongTime }>Long break</Button>
+          <div className="setup-time">
+            <Button className="btn" onClick={ this.setCodeTime }>Code</Button>
+            <Button className="btn" onClick={ this.setShortTime }>Short break</Button>
+            <Button className="btn" onClick={ this.setLongTime }>Long break</Button>
+          </div>
+
         </div>
 
       </div>

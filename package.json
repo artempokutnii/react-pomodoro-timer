@@ -12,6 +12,7 @@
     "react": "^0.14.5",
     "react-bootstrap": "^0.28.5",
     "react-dom": "^0.14.5",
+    "react-github-corner": "^0.3.0",
     "react-router": "^2.0.1",
     "react-select": "^1.0.0-beta12"
   },
