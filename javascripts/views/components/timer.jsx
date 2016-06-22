@@ -1,8 +1,8 @@
 'use strict';
 
 import React, { Component } from 'react';
-import Row from 'react-bootstrap/lib/Row';
-import Col from 'react-bootstrap/lib/Col';
+import { Row, Col, Button } from 'react-bootstrap';
+
 
 export default class Timer extends Component {
 
@@ -33,10 +33,20 @@ export default class Timer extends Component {
   }
 
   render() {
-    console.log(this.state.time)
     return (
-      <div>
-        <span className="time">{ this.format(this.state.time) }</span>
+
+      <div className="main">
+
+        <div>
+          <span className="time">{ this.format(this.state.time) }</span>
+        </div>
+
+        <div className="setup-time">
+          <Button className="btn">Code</Button>
+          <Button className="btn">Short break</Button>
+          <Button className="btn">Long break</Button>
+        </div>
+
       </div>
     );
   }

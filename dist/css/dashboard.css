@@ -2,18 +2,38 @@
  * Base structure
  */
 
-/* Move down content because we have a fixed navbar that is 50px tall */
 body {
-  padding-top: 50px;
-  background-color: #45668e
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 50px;
+    background-color: #45668e
 }
 
 .time {
+    padding-top: 70px;
     font-size: 72px;
     font-weight: 400;
     color: #fff;
     display: block;
     width: 100%;
+    text-align: center;
+}
+
+.btn {
+    border: 0;
+    background: #00d6b2;
+    color: #fff;
+    padding: 10px 0;
+    width: 100%;
+    max-width: 110px;
+    margin: 1px;
+    font-weight: 300;
+    -webkit-transition: background .3s;
+    transition: background .3s;
+}
+
+.setup-time {
+    margin: auto;
     text-align: center;
 }
 
