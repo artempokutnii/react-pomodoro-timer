@@ -10,19 +10,32 @@ export default class Timer extends Component {
   constructor() {
     super();
     this.state = {
-      time: 0
-    }
+      time: 0,
+      play: false
+    };
+    this.elapseTime = this.elapseTime.bind(this);
   }
 
   componentDidMount() {
     this.setDefaultTime();
   }
 
+  //elapseTime() {
+  //  if (this.state.time === 0) {
+  //    console.log('HELLO')
+  //  }
+  //  if (this.state.play === true) {
+  //    let newState = this.state.time - 1;
+  //    this.setState({ time: newState })
+  //  }
+  //}
+
   setDefaultTime() {
     let defaultTime = 1500;
 
     this.setState({
-      time: defaultTime
+      time: defaultTime,
+      play: false
     });
   }
 
@@ -30,7 +43,8 @@ export default class Timer extends Component {
     let defaultTime = 1500;
 
     this.setState({
-      time: defaultTime
+      time: defaultTime,
+      play: true
     })
   };
 
@@ -38,7 +52,8 @@ export default class Timer extends Component {
     let defaultTime = 300;
 
     this.setState({
-      time: defaultTime
+      time: defaultTime,
+      play: true
     })
   };
 
@@ -46,7 +61,8 @@ export default class Timer extends Component {
     let defaultTime = 900;
 
     this.setState({
-      time: defaultTime
+      time: defaultTime,
+      play: true
     })
   };
 
@@ -55,6 +71,7 @@ export default class Timer extends Component {
     let s = Math.floor(seconds % 3600 % 60);
     let timeFormated = (m < 10 ? "0" : "") + m + ":" + (s < 10 ? "0" : "") + s;
     return timeFormated;
+
   }
 
   render() {

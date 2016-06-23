@@ -28,8 +28,6 @@ body {
     max-width: 110px;
     margin: 1px;
     font-weight: 300;
-    -webkit-transition: background .3s;
-    transition: background .3s;
 }
 
 .setup-time {
